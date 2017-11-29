@@ -5,11 +5,17 @@
 
 <head>
 
-	<link rel="stylesheet" type="text/css" href="semantic.min.css">
-	<script
+
+<link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+<script
 	  src="https://code.jquery.com/jquery-3.1.1.min.js"
 	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	  crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="slick/slick/slick.js"></script>
+	<link rel="stylesheet" type="text/css" href="semantic.min.css">
+	
 	  <script type="text/javascript"
 	  src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
 	<script type="text/javascript" src="semantic.min.js"></script>
@@ -17,7 +23,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head> 
 <body>
-	<div id="full" class="ui grid">
+	<div id="full" class="ui container grid">
 		<!-- NAV -->
 		<div id="nav" class="row">
 			<div class="mobile tablet only five wide column">
@@ -25,27 +31,104 @@
 					<i class="content icon"></i>
 				</button>
 			</div>
-			<div class="computer only left floated six wide column">
-				<button class="ui button">Gen</button>
-				<button class="ui button">Gen</button>
-				<button class="ui button">Gen</button>
+			<div class="computer only five wide column">
+				<button class="ui button gen">About</button>
+				<button class="ui button gen">Contact</button>
+				<button class="ui button gen">Media</button>
 			</div>
 			<div class="six wide column center" style="z-index: 5;"><img src="badges/LogoJK.png" style="width: 200px; height: auto;"></div>
 			<div class="mobile tablet only five wide column"></div>
 
-			<div class="computer only right floated five wide column">
-				<button class="ui button right">Main</button>
-				<button class="ui button right">Main</button>
-				<button class="ui button right">Main</button>
+			<div class="computer only five wide column">
+				<button class="ui button main rightF">Passion</button>
+				<button class="ui button main rightF">Wisdom</button>
+				<button class="ui button main rightF">Love</button>
+				
 			</div>
 		</div>
 		<!-- MEAT -->
 		<div id="meat" class="row">
 
-			<div class="ui grid" style="height: 100%; width: 100%; margin-left: 0.1%;">
+			<div class="ui grid" style="height: 99%;">
+				<div id="gallery" class="tablet computer only sixteen wide column">
+						<div class="ui container grid">
+							<div class="sixteen wide column">
+								
+								<div id="carousel">
+									<div class="photo">
+										<img src="imgs/carousel/photo_0.jpg">
+									</div>
+									<div class="photo">
+										<img src="imgs/carousel/photo_1.jpg">
+									</div>
+									<div class="photo">
+										<img src="imgs/carousel/photo_2.jpg">
+									</div>
+									<div class="photo">
+										<img src="imgs/carousel/photo_3.jpg">
+									</div>
+								</div>
+								<div class="row">
+									<div class="ui grid">
+										<div class="left floated three wide column">
+											<div id="lArrow" class="ui circular icon button">
+												<i class="large arrow left icon"></i>
+											</div>
+										</div>
+										<div class="right floated three wide column">
+											<div id="rArrow" class="ui circular icon button rightF">
+												<i class="large arrow right icon"></i>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<script>
+									$("#carousel").slick({
+										infinite: true,
+								  		slidesToShow: 1,
+								  		slidesToScroll: 1,
+								  		prevArrow: $("#lArrow"),
+								  		nextArrow: $("#rArrow")
+									});
+								</script>
+								
+							</div>
+						</div>	
+				</div>
 				
-					
-			
+					<div id="box" class="computer only sixteen wide column">
+						<div class="ui container grid">
+							<div class="centered row">
+								<div class="five wide column center">
+									<div class="row compTitle l center">
+										<img class="sTitle" src="badges/Love.png">
+										<div class="borderl"></div>
+									</div>
+									<div id="love" class="row" style="height: 300px"></div>
+
+								</div>
+						
+								<div class="five wide column center">
+									<div class="row compTitle w center">
+										<img class="sTitle" src="badges/Wisdom.png">
+										<div class="borderw"></div>
+									</div>
+									<div id="wisdom" class="row" style="height: 300px"></div>
+								</div>
+								<div class="five wide column center">
+									<div class="row compTitle p center">
+										<img class="sTitle" src="badges/Passion.png">
+										<div class="borderp"></div>
+									</div>
+									<div id="passion" class="row" style="height: 300px"></div>
+								</div>
+							</div>
+							</div>
+						</div>
+
+						
+						
 							<div id="love" class="mobile tablet only sixteen wide column center active borderl" >
 								<div class="row mobileTitle l"><img src="badges/Love.png"></div>
 							</div> 
@@ -55,6 +138,7 @@
 							<div id="passion" class="mobile tablet only sixteen wide column center borderp">
 								<div class="row mobileTitle p" ><img src="badges/Passion.png"></div>
 							</div>
+						
 					
 			
 			</div>
@@ -70,6 +154,7 @@
 <script type="text/javascript"
 	  src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
 
-<script type="text/javascript" src="index.js"></script>
 
+
+<script type="text/javascript" src="index.js"></script>
 </html>
