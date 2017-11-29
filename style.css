@@ -3,6 +3,7 @@ body{
 	background-color: #fefefe;
 }
 
+ 
 .border{
 	border: 2px solid gray;
 }
@@ -17,6 +18,13 @@ body{
 	
 	min-height: 60px;
 }
+
+	img.logo{
+		min-width: 200px;
+		height: auto;
+		position: relative;
+		right: 50px;
+	}
 #meat{
 	height: 80%;
 }
@@ -37,8 +45,8 @@ body{
 }
 
 .ui.icon.button.mGen{
-	margin-top: 10px;
-	margin-left: 10px;
+	margin-top: 45px;
+
 }
 
 .mobileTitle{
@@ -144,7 +152,11 @@ background-color: #DADAD2;
 	font-size: 15px;
 }
 
-
+@media only screen and (min-width:500px){
+	img.logo{
+		right: 0px;
+	}
+}
 @media only screen and (min-width: 990px) and (max-width: 1200px){
 	#box{
 		position: relative;
@@ -170,3 +182,12 @@ background-color: #DADAD2;
 	}
 
 }
+
+
+
+
+
+/*NO-NEED TO DISPLAY YET*/
+
+
+
