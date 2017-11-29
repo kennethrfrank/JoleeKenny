@@ -11,7 +11,7 @@ $(document).ready(function(){
 	});
 
 
-
+	
 	mobileButtons();
 });
 
@@ -35,3 +35,4 @@ function mobileButtons(){
 	});
 
 }
+
