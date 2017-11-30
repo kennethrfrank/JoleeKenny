@@ -2,8 +2,20 @@ body{
 	font-size: 15px;
 	background-color: #fefefe;
 }
-
- 
+.pink{
+	color: #D9CECE;
+}
+.blue{
+	color: #CDD2D6;
+}
+ a:visited.pink,
+ a:hover.pink{
+ 	color: pink;
+ }
+ a:hover.blue,
+ a:visited.blue{
+ 	color: blue;
+ }
 .border{
 	border: 2px solid gray;
 }
@@ -20,13 +32,16 @@ body{
 }
 
 	img.logo{
-		min-width: 200px;
+	
+		
 		height: auto;
 		position: relative;
-		right: 50px;
+		right: 70px;
+		bottom: 30px;
 	}
 #meat{
-	height: 80%;
+	height: 65%;
+	margin-bottom: 80px;
 }
  .active{
  	height: 70%;
@@ -38,6 +53,7 @@ body{
  	min-height: 300px;
  }
 #foot{
+	background-color: #fefefe;
 	height: 5%;
 	position: fixed;
 	left: 0px;
@@ -45,7 +61,8 @@ body{
 }
 
 .ui.icon.button.mGen{
-	margin-top: 45px;
+	display: none;
+	margin-top: 25px;
 
 }
 
@@ -147,6 +164,7 @@ background-color: #DADAD2;
 
 .ui.button.gen,
 .ui.button.main{
+	display: none;
 	margin-top: 20px;
 	background-color: #fefefe;
 	font-size: 15px;
@@ -154,7 +172,9 @@ background-color: #DADAD2;
 
 @media only screen and (min-width:500px){
 	img.logo{
-		right: 0px;
+	
+		right: 30px;
+		bottom: 30px;
 	}
 }
 @media only screen and (min-width: 990px) and (max-width: 1200px){
