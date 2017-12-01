@@ -13,11 +13,11 @@ $(document).ready(function(){
 	// 		}
 	// 	});
 	var WindowHeight = $(window).height();
-	$("#full").css("height", WindowHeight);
+	$("body").css("height", WindowHeight);
 	$(window).on('resize', function(event){
 		var rWindowHeight = $(window).height();
 
-		$("#full").css("height", rWindowHeight);
+		$("body").css("height", rWindowHeight);
 
 
 	});
@@ -30,6 +30,12 @@ $(document).ready(function(){
 function allButtons(){
 	$("#logo").on("click", function(event){
 		location.reload();
+	});
+	$("a.mail.pink").on("click", function(event){
+		$(this).html("jolmaupin5@gmail.com");
+	});
+	$("a.mail.blue").on("click", function(event){
+		$(this).html("kennethrfrankjr@gmail.com");
 	});
 }
 
